@@ -6,16 +6,20 @@ Création: le 20/02/2023
 # Imports 
 import random
 # Fonctions 
-
+import fonctions
 # Programme principal 
 def main():
-    i = 0
-    j = 0
+    
+    matrice = []
     TAILLE = 10
-    tab = [[0]*TAILLE] * TAILLE
-    for i in range(0,9):
-        print(tab[i])
-    print("\n")
+
+#INITIALISATION Matrice
+
+    matrice = fonctions.initMatrice(matrice)
+    fonctions.affichageMatrice(matrice)
+
+    fonctions.testAutour(matrice)
+
 
 if __name__ == '__main__':
     main()
